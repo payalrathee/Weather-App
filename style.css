@@ -1,0 +1,53 @@
+body {
+    background: url('bg.jpg');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+.wa_weather_info_wrapper {
+    margin-top: 20px;
+    height: auto;
+    box-shadow: 0 0 3px #aaa;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wa_weather_info_wrapper .wa_card{
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.wa_card_section {
+    box-shadow: 0 0 3px #aaa;
+    padding: 5px;
+}
+
+.wa_weather_info_wrapper .wa_card img{
+    height: 110px;
+    width: 110px;
+}
+
+#wa_desc {
+    text-transform: capitalize;
+}
+
+#wa_err {
+    color: red;
+}
+
+@media screen and (max-width: 800px) {
+    .wa_weather_info_wrapper {
+        width: 80%;
+      
+    }
+}
